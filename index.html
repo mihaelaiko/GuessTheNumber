@@ -13,10 +13,10 @@
 			<div class="select-level">
 				<!-- hidden when game play starts -->
 				<label for="selectLevel">Select level</label>
-				<select name="selectLevel">
-					<option value="level1">1-10</option>
-					<option value="level2">1-50</option>
-					<option value="level3">1-100</option>
+				<select id ="ranges" name="selectLevel">
+					<option value="level1">Easy [1-10]</option>
+					<option value="level2">Basic [1-50]</option>
+					<option value="level3">Master [1-100]</option>
 				</select>
 				<button class="btn-start-play" autofocus>Play</button>
 			</div>
@@ -35,8 +35,8 @@
 			<!-- shown when game play starts -->
 			<h2>Познай числото, което съм си намислил, от <span class="range-min"></span> до <span class="range-max"></span></h2>
 			<div class="user-input-area">
-				<label for=""><input type="number" autofocus></label>
-				<button class="btn-guess">Guess</button>
+				<label for="guessField"><input type="number" id="guessField" class="guessField" autofocus></label>
+				<button class="btn-guess" id="submitGuess" value="submit guess">Guess</button>
 				<button class="btn-reset-game">Reset Game</button>
 			</div>
 			<div class="play-status">
